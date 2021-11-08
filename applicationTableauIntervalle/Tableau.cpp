@@ -84,7 +84,7 @@ Tab::Tableau::~Tableau()
 {
     if (this->tab)
     {
-        delete[] this->tab;
-        this->tab = 0;
+        delete this->tab;
+        this->tab = nullptr;
     }     
 }
