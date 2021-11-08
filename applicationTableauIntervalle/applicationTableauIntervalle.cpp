@@ -43,16 +43,17 @@ int main()
 
 
 
-    TableauBorne  TB1(5, 11, 10);
-    TB1.remplirTab();
+    TableauBorne  TB1(5, 1, 10);
+    //TB1.remplirTab();
     TB1.print();
     //TB1[0] = 5.7; //erreur car la modification via ce opérateur n'rst pas autorisé
-    cout << TB1[0];
+    //cout << TB1[0];
 
 
-
-
-
+    //TB1.operator[](0) = 6;// la modification n'est pas atorisée
+    TB1.operator()(0, 2);
+    TB1.operator()(2, 5);
+    TB1.print();
 
 
 
