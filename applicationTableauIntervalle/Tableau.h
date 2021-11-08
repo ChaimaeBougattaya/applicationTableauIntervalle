@@ -2,7 +2,7 @@
 namespace Tab {
 	class Tableau
 	{
-	protected:
+	private:
 		float* tab;
 		int taille;
 	public:
@@ -12,8 +12,7 @@ namespace Tab {
 		void remplir();
 		void print()const;
 		~Tableau();
-	private:
-		float& operator[](unsigned int);
+		float& operator[](unsigned int)const;
+		//Si on met const ou non aucun changement parce qu'on return un réference
 	};
-
 }
